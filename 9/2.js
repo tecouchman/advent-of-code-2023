@@ -18,8 +18,8 @@ lines.forEach(line => {
         n++;
     }
 
-    let newVal = line[line.length - 2][0];
-    for (let i = line.length - 2; i > 0; i--) {
+    let newVal = 0;
+    for (let i = line.length - 1; i > 0; i--) {
         newVal = line[i-1][0]-newVal;
     }
     total += newVal;
